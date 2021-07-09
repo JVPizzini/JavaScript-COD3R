@@ -25,7 +25,7 @@ function amountChar2(char,phase){
 function amountChar3(char,phase){
     return [...phase].filter(search => search === char).length
 }
-
+//
 console.log(amountChar("a","a maça está na arvore"))
 console.log(amountChar2("a","a maça está na arvore"))
 console.log(amountChar3("a","a maça está na arvore"))
