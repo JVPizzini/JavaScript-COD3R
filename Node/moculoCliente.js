@@ -8,3 +8,4 @@ console.log(moduloA)
 
 
 console.log(moduloB)
+console.log(moduloB.boaBoite())
