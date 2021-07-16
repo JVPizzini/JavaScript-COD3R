@@ -7,3 +7,10 @@ global.MinhaApp = Object.freeze({
     },
     nome: 'Sistema Legal'
 })
+
+global.Testando = nome => {
+    return {
+        falar: () => console.log(`eu sou global ${nome}`)
+        , nome:nome
+    }
+}
