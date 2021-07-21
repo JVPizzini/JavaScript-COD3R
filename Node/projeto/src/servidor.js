@@ -7,9 +7,21 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({ extended: true}))
 
+// Teste com GET
+
+// app.get('/produtos', (req, res, next) =>{
+//     console.log('Passando no primeiro middleware') // Vai ser convertido em JSON
+//     next()
+// })
+
+// app.get('/produtos', (req, res, next) =>{
+//     res.send({nome: "notebook",preco:12456.00}) // Vai ser convertido em JSON
+// })
+
 // GET - Para obter informações
-app.get('/produtos', (req, res, next) =>{
-    res.send(BD.getProdutos()) // Vai ser convertido em JSON
+
+app.get('/produtos', (req, res)=>{
+    res.send(BD.getProdutos())
 })
 
 app.get('/produtos/:id',(req, res, next) =>{

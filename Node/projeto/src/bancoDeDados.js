@@ -19,7 +19,6 @@ function getProdutos(){
     return Object.values(produtos)
 }
 
-
 function excluirProduto(id) {
     const produto = produtos[id]
     delete produtos[id]
